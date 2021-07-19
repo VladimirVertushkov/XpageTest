@@ -1,0 +1,157 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>About me</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="nav">
+      <ul>
+        <li><a href="https://www.instagram.com/vertushkov_v/">Instagram</a></li>
+        <li><a href="#" onclick="number()">Номер</a></li>
+        <li><a href="https://vk.com/depoutat">Вконтакте</a></li>
+        <li><a href="#" onclick="aboutme()">Кликните сюда, чтобы узнать меня подробнее</a></li>
+      </ul>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p>8-904-979-81-05</p>
+      </div>
+
+    </div>
+
+
+    <div id="showcase">
+      <img src="avatar1.jpg" width="350" height="350" align="left">
+      <div>
+        <h1> Вертушков Владимир</h1>
+        <p>День рождения: 16 июля 1996 г</p>
+        <p>Город: Челябинск </p>
+        <p>Семейное положение: не женат </p>
+        <p>Образование:
+          ВУЗ: ЮУрГУ, ВШЭиКН, кафедра ЭВМ, бакалавр, 2014-2018 гг; ЮУрГУ, ВШЭиКН, кафедра ЭВМ, магистратура, 2018-2020
+          гг </p>
+        <p>Форма обучения: Очное отделение </p>
+        <p>Школа: Школа №2, г. Кыштым, 2003-2014 гг </p>
+      </div>
+    </div>
+    <div>
+      <h3>Знание языков:</h3>
+      <table border="1px">
+        <thead>
+          <tr>
+            <td> </td>
+            <td> Java </td>
+            <td> JavaScript </td>
+            <td> C++ </td>
+            <td> C# </td>
+            <td> Swift </td>
+          </tr>
+        </thead>
+        <tr>
+          <td> Отличное владние </td>
+          <td> нет </td>
+          <td> нет </td>
+          <td> нет </td>
+          <td> нет </td>
+          <td> нет </td>
+        </tr>
+        <tr>
+          <td> Хорошее владние </td>
+          <td> нет </td>
+          <td> да </td>
+          <td> да </td>
+          <td> да </td>
+          <td> нет </td>
+        </tr>
+        <tr>
+          <td> Среднее владние </td>
+          <td> да </td>
+          <td> да </td>
+          <td> да </td>
+          <td> да </td>
+          <td> да </td>
+        </tr>
+        <tr>
+          <td> Плохое владение </td>
+          <td> нет </td>
+          <td> нет </td>
+          <td> да </td>
+          <td> да </td>
+          <td> нет </td>
+        </tr>
+      </table>
+    </div>
+    <div id="number">
+      <p>Телефон:</p>
+      <input type="text" placeholder="+7(999)99-99-99" size="40">
+    </div>
+    <div id="number">
+      <p>Имя:</p>
+      <input type="text" placeholder="Loki" size="40">
+    </div>
+    <div id="top"> </div>
+    <div id="text">
+      <h1>О себе</h1>
+      <p>Здраствуйте, меня зовут Владимир Вертушков. Я родился в городе Кыштыме Челябинской области. До 2020 года
+        являлся студентом ЮУрГу, высшей школы электроники и компьютерных наук. Обучался на специальности
+        электронно-вычислительные машины. В 2018 году получил степень бакалавра на данной кафедре. Темой выпускной
+        квалификационной работы была "Разработка программно-аппаратного комплекса получения информации с датчиков
+        сигнализирующих о состоянии автомобиля". Работа была защищена на оценку "хорошо". В 2020 году получил степень
+        магистра. Темой выпускной квалификационной работы была "Разработка мобильного аудиогида для городских
+        туристических маршрутов". Работа была защищена на оценку "хорошо". 
+        Окончил учебный курс по языку JavaScript на ресурсе learn.javascript.ru. 
+        По окончанию курса был выполнен курсовой проект «Ресторан с онлайн-заказом». 
+        Выполнял тестовые задания по frontend с использованием react и react native.</p>
+      <p class="fig"><img src="study.jpg" height="300"></p>
+      <p> Я люблю путешествовать. Несколько лет назад я посетил Крым, проехал по всему побережью. Два года подряд ездил
+        в Сочи. Прыгал с самой высокой "тарзанки" в России. Она расположена на подвисном мосту в Скайпарке. Высота
+        платформы 207 метром над уровнем земли.</p>
+      <p class="fig"><img src="jump.jpg" height="250"></p>
+      <p> Также мое хобби - футбол. Слежу за всеми популярными лигами. Болею за футбольный клуб Спартак Москва. В мае 2019 года
+         посетил матч Урал-Спартак в Екатеринбурге.
+      </p>
+      <p class="fig"><img src="football.jpg" width="300"></p>
+    </div>
+    <div id="footer">
+    </div>
+  </div>
+  <script>
+
+    function number() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "block";
+      document.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    }
+
+    function aboutme() {
+      let text = document.getElementById("text");
+      let top = document.getElementById("top");
+      let footer = document.getElementById("footer");
+      if (text.style.display === "block") {
+        console.log("aaa");
+        text.style.display = "none";
+        top.style.display = "none";
+        footer.style.display = "none";
+      } else {
+
+        text.style.display = "block";
+        top.style.display = "block";
+        footer.style.display = "block";
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>
